@@ -1,9 +1,9 @@
 name: My First Workflow 2
 # This workflow says Hello World and then lists all files in the repo
 on: 
-  push:
-     branches: 
-       - main
+  #push:
+  #   branches: 
+  #     - main
   workflow_dispatch:
 jobs:
   MyFirstJob:
