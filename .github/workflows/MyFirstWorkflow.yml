@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # this is a comment
       - run: echo "👋 Hello GHA World!"
 
       - name: Checkout
