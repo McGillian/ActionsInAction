@@ -1,0 +1,22 @@
+name: jpc First Workflow
+on: 
+  push:
+    branches:
+      - main
+  workflow_dispatch: 
+jobs:
+  MyFirstJob:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Hello from my very first GitHub Workflow"
+
+      - name: CheckOut
+        uses: actions/checkout@v6.0.2
+
+      - name: ListFiles
+        run: |
+          echo "The repository ${{ github.repository }} contains the following files:"
+          tree
+          
+      
