@@ -22,9 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: Job_01
     steps:
-      - run:| 
-          "echo Job: ${{ github.job }}"
-          echo "...and now we are COMPLETED"
+      - run: "echo Job: ${{ github.job }}"
+    #      echo "...and now we are COMPLETED"
       
           
       
