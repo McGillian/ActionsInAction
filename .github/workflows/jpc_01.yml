@@ -4,10 +4,10 @@ on:
     branches:
       - main
   workflow_dispatch: 
+  
 jobs:
   MyFirstJob:
     runs-on: ubuntu-latest
-
     steps:
       - run: echo "Hello from my very first GitHub Workflow"
 
